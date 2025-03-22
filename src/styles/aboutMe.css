@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+/* Title Styling */
+.about-title {
+  position: relative;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-family: "Orbitron", sans-serif; /* Futuristic Tech Font */
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #00f2ff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sections Layout */
+.about-sections {
+  display: flex;
+  gap: 80px;
+}
+
+/* Profile Image Styling */
+.about-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-left img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(202, 245, 245, 0.7);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.about-left img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgb(235, 245, 245);
+}
+
+/* Text Styling */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Poppins", sans-serif; /* Modern Readable Font */
+  font-size: 22px;
+  font-weight: 400;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Paragraph Emphasis */
+.about-right p strong {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  color: #69bbf5;
+  text-shadow: 0px 0px 10px rgba(149, 219, 247, 0.7);
+}
+
+.about-right p {
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about {
+    margin: 50px 40px;
+    gap: 50px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-title h1 {
+    font-size: 60px;
+  }
+
+  .about-para {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: 40px 20px;
+    gap: 40px;
+  }
+
+  .about-title h1 {
+    font-size: 50px;
+  }
+
+  .about-left img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-para {
+    font-size: 18px;
+  }
+}
