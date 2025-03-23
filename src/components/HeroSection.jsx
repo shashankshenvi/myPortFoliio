@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
 import profilePic from "../assets/hero/shashank.png";
 import phoneIcon from "../assets/contact/phone.svg";
 import mailIcon from "../assets/contact/mail.svg";
@@ -12,7 +13,17 @@ const HeroSection = () => {
     <div className="hero">
       <img src={profilePic} alt="Shashank Profile" className="hero-img" />
       <h1>
-        <span>I am Shashank,</span> FullStack Developer
+        <span className="typing-effect">
+          <Typewriter
+            words={["I am Shashank,", "Full Stack Developer"]}
+            loop={Infinity}
+            cursor
+            cursorStyle="_"
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
       </h1>
       <p>
         I specialize in <b>building high-performance</b> and <b>scalable</b>{" "}

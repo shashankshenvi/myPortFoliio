@@ -29,6 +29,15 @@
   margin-top: 20px;
 }
 
+.typing-effect {
+  font-family: "Orbitron", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00f2ff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero h1 span {
   background: linear-gradient(90deg, #00f2ff, #8a2be2);
   background-clip: text;

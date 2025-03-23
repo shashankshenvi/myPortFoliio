@@ -1,28 +1,25 @@
 import React from "react";
-import "../styles/experience.css";
 import history from "../data/history.json";
+import "../styles/experience.css";
 
-export const Experience = () => {
+const Experience = () => {
   return (
     <section className="experience-container" id="experience">
       <h2 className="experience-header">Experience</h2>
 
       <div className="experience-grid">
-        {history.map((historyItem, id) => (
+        {history.map((item, id) => (
           <div key={id} className="experience-item">
-            {/* Role & Organization */}
             <div className="text-container">
               <h3 className="role-header">
-                {historyItem.role} <br /> {historyItem.organisation}
+                {item.role} <br /> {item.organisation}
               </h3>
               <p className="dates">
-                {historyItem.startDate} - {historyItem.endDate}
+                {item.startDate} - {item.endDate}
               </p>
-
-              {/* Work Experience List */}
               <ul className="experiences">
-                {historyItem.experiences.map((experience, idx) => (
-                  <li key={idx}>{experience}</li>
+                {item.experiences.map((exp, idx) => (
+                  <li key={idx}>{exp}</li>
                 ))}
               </ul>
             </div>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Main Container */
 .experience-container {
   display: flex;
   flex-direction: column;
@@ -10,11 +11,9 @@
   text-align: center;
 }
 
-/* Experience Header Styling */
+/* Experience Header */
 .experience-header {
   font-family: "Orbitron", sans-serif;
-  position: relative;
-  padding: 0px 30px;
   font-size: 80px;
   font-weight: 700;
   text-transform: uppercase;

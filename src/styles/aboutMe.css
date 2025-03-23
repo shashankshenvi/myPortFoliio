@@ -27,12 +27,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Sections Layout */
-.about-sections {
-  display: flex;
-  gap: 80px;
-}
-
 /* Profile Image Styling */
 .about-left {
   position: relative;
@@ -41,7 +35,7 @@
   align-items: center;
 }
 
-.about-left img {
+.profile-img {
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -49,9 +43,15 @@
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
-.about-left img:hover {
+.profile-img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 35px rgb(235, 245, 245);
+}
+
+/* About Section Layout */
+.about-sections {
+  display: flex;
+  gap: 80px;
 }
 
 /* Text Styling */
@@ -65,7 +65,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: "Poppins", sans-serif; /* Modern Readable Font */
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: #ddd;
@@ -84,6 +84,20 @@
   margin-bottom: 15px;
 }
 
+/* Service Cards Section */
+.sectionSubText {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sectionHeadText {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .about {
@@ -97,7 +111,7 @@
     text-align: center;
   }
 
-  .about-left img {
+  .profile-img {
     width: 250px;
     height: 250px;
   }
@@ -121,7 +135,7 @@
     font-size: 50px;
   }
 
-  .about-left img {
+  .profile-img {
     width: 200px;
     height: 200px;
   }

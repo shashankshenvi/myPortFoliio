@@ -14,10 +14,12 @@
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
     "emailjs-com": "^3.2.0",
+    "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.0.0",
     "react-scroll": "^1.9.3",
+    "react-simple-typewriter": "^5.0.1",
     "three": "^0.174.0"
   },
   "devDependencies": {
